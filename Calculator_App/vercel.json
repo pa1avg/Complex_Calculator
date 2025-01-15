@@ -1,0 +1,15 @@
+{
+    "builds":[
+      {
+        "src": "Calculator_App/app.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "Calculator_App/app.py"
+      }
+    ]
+  }
+  
